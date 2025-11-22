@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo_productos>
+    <producto id="A001">
+        <nombre>Leche</nombre>
+        <tipo>Abarrotes</tipo>
+        <precio moneda="MXN">25.00</precio>
+        <descripcion>Leche entera fresca.</descripcion>
+    </producto>
+
+    <producto id="A002">
+        <nombre>Aguacate</nombre>
+        <tipo>Verdura</tipo>
+        <precio moneda="MXN">18.00</precio>
+        <descripcion>Aguacate fresco por pieza.</descripcion>
+    </producto>
+
+    <producto id="C001">
+        <nombre>Guacamole</nombre>
+        <tipo>Comida Preparada</tipo>
+        <precio moneda="MXN">35.00</precio>
+        <descripcion>Guacamole recién preparado.</descripcion>
+    </producto>
+</catalogo_productos>

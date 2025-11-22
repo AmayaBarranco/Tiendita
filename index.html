@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita La Abuelita</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 id="titulo-principal">Tiendita La Abuelita</h1>
+            <p>Tu tienda de abarrotes de confianza desde siempre.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#menu">Productos</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="datos.xml" target="_blank" class="xml-link">Ver Catálogo XML</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <section id="intro" class="section-box">
+            <h2>Bienvenido</h2>
+            <p>En Tiendita La Abuelita encontrarás productos frescos, abarrotes esenciales y comidas preparadas todos los días.</p>
+
+            <img src="SOURCE/abuelita.PNG" class="banner-img" alt="Abuelita">
+        </section>
+
+        <section id="horario" class="section-box">
+            <h2 class="section-title">⏰ Nuestro Horario</h2>
+            <p>Te atendemos con gusto en los siguientes horarios:</p>
+            <ul>
+                <li>Lunes a Sábado: 8:00 AM - 6:00 PM</li>
+                <li>Domingo: Cerrado</li>
+            </ul>
+        </section>
+
+        <section id="menu" class="section-box layout-grid">
+            <h2 class="section-title">Productos y Comidas Preparadas</h2>
+
+            <div class="menu-col">
+                <h3>Productos de Abarrotes</h3>
+                <ul>
+                    <li>Chocolates</li>
+                    <li>Leche</li>
+                    <li>Cigarros</li>
+                    <li>Tomates</li>
+                    <li>Cilantro</li>
+                    <li>Aguacate</li>
+                    <li>Ajo</li>
+                </ul>
+            </div>
+
+            <div class="menu-col">
+                <h3>Comidas Preparadas</h3>
+                <ol>
+                    <li>Frijoles</li>
+                    <li>Guacamole</li>
+                    <li>Spaghetti</li>
+                    <li>Sopa del día</li>
+                </ol>
+            </div>
+
+            <div class="full-width">
+                <img src="SOURCE/verduras.PNG" class="banner-img" alt="Verduras">
+
+                <h3>Lista de Precios</h3>
+
+                <h4>Producto</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio (MXN)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Chocolates</td><td>Abarrote</td><td>$15</td></tr>
+                        <tr><td>Leche</td><td>Abarrote</td><td>$25</td></tr>
+                        <tr><td>Cigarros</td><td>Abarrote</td><td>$250</td></tr>
+                        <tr><td>Tomates</td><td>Abarrote</td><td>$40 kg</td></tr>
+                        <tr><td>Cilantro</td><td>Abarrote</td><td>$15</td></tr>
+                        <tr><td>Aguacate</td><td>Abarrote</td><td>$30</td></tr>
+                        <tr><td>Ajo</td><td>Abarrote</td><td>$10</td></tr>
+                    </tbody>
+                </table>
+
+                <h4>Comidas Preparadas</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Platillo</th>
+                            <th>Precio (MXN)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Frijoles</td><td>$50</td></tr>
+                        <tr><td>Guacamole</td><td>$50</td></tr>
+                        <tr><td>Spaghetti</td><td>$75</td></tr>
+                        <tr><td>Sopa del día</td><td>$75</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="ubicacion" class="section-box">
+            <h2>Ubicación</h2>
+            <p>Encuéntranos fácilmente con el siguiente mapa:</p>
+
+            <!-- ÚNICO CAMBIO REALIZADO -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1698.0527828130093!2d-106.45196226308349!3d31.658331485608752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1763783420358!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+        <section id="contacto" class="section-box">
+            <h2 class="section-title">Contáctanos</h2>
+            <form id="contact-form" method="POST">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="pedido">Pedido</option>
+                    <option value="queja">Queja</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+
+            <script>
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const formData = {
+                        nombre: nombre.value,
+                        correo: correo.value,
+                        asunto: asunto.value,
+                        mensaje: mensaje.value,
+                        fechaEnvio: new Date().toLocaleString()
+                    };
+                    localStorage.setItem('contactoTiendita', JSON.stringify(formData));
+                    alert('Mensaje guardado localmente.');
+                    this.reset();
+                });
+            </script>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Tiendita La Abuelita. Proyecto estudiantil. | <a href="aviso.html">Aviso de Privacidad</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

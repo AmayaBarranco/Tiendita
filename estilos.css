@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #faf7f5;
+    color: #3b2e2a;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-header {
+    background: #e7c7b7;
+    color: #4a2e2a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.banner-img {
+    max-width: 220px;
+    display: block;
+    margin: 15px auto 0 auto;
+    border-radius: 8px;
+}
+
+nav {
+    background: #b3907c;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #8a6b5a;
+    border-radius: 5px;
+}
+
+#titulo-principal {
+    margin-bottom: 5px;
+    color: #6b3e2e;
+}
+
+.section-box {
+    padding: 30px;
+    margin: 20px 0;
+    background: #ffffff;
+    border: 1px solid #dfd6d2;
+    border-radius: 8px;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid #c9b9b1;
+    padding: 10px;
+    text-align: left;
+}
+
+.promo-row {
+    background-color: #f1ebe4;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c6bab4;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background-color: #b57f63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #996a52;
+}
+
+.main-footer {
+    background: #4a2e2a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
